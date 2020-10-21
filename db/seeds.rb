@@ -16,6 +16,12 @@ project1 = Project.create(
 project2 = Project.create(
     organization: "org2", 
     url: "org2.com",
-    summary: "org2 is about things", 
+    summary: "org2 is about things",  
     donation_options: "How to help org2"
+)   
+project3 = Project.create(
+    organization: "org3", 
+    url: "org3.com",
+    summary: "org3 is about things",  
+    donation_options: "How to help org3"
 )   
