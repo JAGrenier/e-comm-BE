@@ -7,9 +7,15 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 Project.destroy_all
 
-    Project.create(
+project1 = Project.create(
         organization: "org1", 
         url: "org1.com",
         summary: "org1 is about things", 
         donation_options: "How to help org1"
     )
+project2 = Project.create(
+    organization: "org2", 
+    url: "org2.com",
+    summary: "org2 is about things", 
+    donation_options: "How to help org2"
+)   
