@@ -5,23 +5,36 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-Project.destroy_all
+# require 'rest-client'
+# require 'json'
+# require 'pry'
+# require 'dotenv'
 
-project1 = Project.create(
-        organization: "org1", 
-        url: "org1.com",
-        summary: "org1 is about things", 
-        donation_options: "How to help org1"
-    )
-project2 = Project.create(
-    organization: "org2", 
-    url: "org2.com",
-    summary: "org2 is about things",  
-    donation_options: "How to help org2"
-)   
-project3 = Project.create(
-    organization: "org3", 
-    url: "org3.com",
-    summary: "org3 is about things",  
-    donation_options: "How to help org3"
-)   
+
+# api_key = ENV["GG_API_KEY"]
+# binding.pry
+# response = RestClient.get("https://api.globalgiving.org/api/public/projectservice/themes/gender/projects/active.json?api_key=#{api_key}")
+
+# data = JSON.parse(response)
+# project_data = data["projects"]["project"]
+
+# project1 = Project.create(
+#         organization: "org1", 
+#         url: "org1.com",
+#         summary: "org1 is about things", 
+#         donation_options: "How to help org1"
+# )
+# project2 = Project.create(
+#     organization: "org2", 
+#     url: "org2.com",
+#     summary: "org2 is about things",  
+#     donation_options: "How to help org2"
+# )   
+# project3 = Project.create(
+#     organization: "org3", 
+#     url: "org3.com",
+#     summary: "org3 is about things",  
+#     donation_options: "How to help org3"
+# )   
+
+# binding.pry

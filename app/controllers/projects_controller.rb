@@ -3,6 +3,7 @@ class ProjectsController < ApplicationController
 
   # GET /projects
   def index
+    # byebug
     @projects = Project.all
 
     render json: @projects

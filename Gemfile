@@ -41,3 +41,4 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 
 gem 'rest-client'
+gem 'dotenv-rails'
