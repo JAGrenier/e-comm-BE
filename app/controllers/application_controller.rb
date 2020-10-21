@@ -2,6 +2,7 @@ class ApplicationController < ActionController::API
 
 
     def seed_db
+        Project.destroy_all
         api_key = ENV["GG_API_KEY"]
         response = RestClient.get("https://api.globalgiving.org/api/public/projectservice/themes/gender/projects/active.json?api_key=#{api_key}")
 
